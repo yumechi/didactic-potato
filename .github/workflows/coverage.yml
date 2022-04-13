@@ -4,6 +4,9 @@ on:
     branches:
       - master
       - main
+  push:
+    branches:
+      - main
 
 jobs:
   coverage:

@@ -4,7 +4,8 @@
   "description": "なんかいろいろ機能を試すためだけに存在するリポジトリ",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test-coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",

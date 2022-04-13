@@ -1,15 +1,12 @@
-name: coverage
+name: coverage-pr-report
 on:
   pull_request:
     branches:
       - master
       - main
-  push:
-    branches:
-      - main
 
 jobs:
-  coverage:
+  coverage-pr-report:
     permissions:
       checks: write
       pull-requests: write

@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "jest",
-    "test:log-coverage": "jest --coverage",
+    "test:codecov-coverage": "jest --coverage",
     "test:coverage": "npm run test -- --coverage --silent --testLocationInResults --ci --json --outputFile=\"report.json\""
   },
   "repository": {

@@ -2,7 +2,8 @@ name: test
 on:
   push:
     branches:
-      - feature/*
+      - master
+      - main
 
 jobs:
   test:
@@ -10,12 +11,15 @@ jobs:
     strategy:
       matrix:
         node: [ '16' ]
-    name: Node ${{ matrix.node }} sample
+    name: Node ${{ matrix.node }}
     steps:
       - uses: actions/checkout@v3
-      - name: Setup node
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
       - run: npm install
-      - run: npm test
+      - run: test:codecov-coverage
+      - name: Upload Coverage
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}

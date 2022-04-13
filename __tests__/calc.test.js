@@ -15,3 +15,7 @@ test('subs 5 - 2 to equal 3', () => {
 test('5 > 2 is true', () => {
   expect(gt(5, 2)).toBe(true);
 });
+
+test('5 > 5 is false', () => {
+  expect(gt(5, 5)).toBe(false);
+});

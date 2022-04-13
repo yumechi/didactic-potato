@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: npm install
-      - run: test:codecov-coverage
+      - run: npm run test:codecov-coverage
       - name: Upload Coverage
         uses: codecov/codecov-action@v1
         with:

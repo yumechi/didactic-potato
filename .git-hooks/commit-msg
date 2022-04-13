@@ -1,0 +1,3 @@
+#!/bin/env zsh
+
+npx git-conventional-commits commit-msg-hook "$1"

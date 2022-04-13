@@ -19,12 +19,13 @@
   },
   "homepage": "https://github.com/yumechi/didactic-potato#readme",
   "devDependencies": {
-    "jest": "^27.5.1",
-    "git-conventional-commits": "^1.2.0",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1",
     "commitizen": "^4.2.0",
-    "cz-conventional-changelog": "^3.3.0"
-  },
-  "dependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "git-conventional-commits": "^1.2.0",
+    "jest": "^27.5.1"
   },
   "config": {
     "commitizen": {
